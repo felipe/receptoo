@@ -1,0 +1,5 @@
+.env
+.DS_Store
+.sass-cache
+.gulp-scss-cache
+node_modules

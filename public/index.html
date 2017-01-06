@@ -1,0 +1,66 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="user-scalable=1.0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="apple-mobile-web-app-capable" content="yes">
+    <title>RecepToo</title>
+    <link rel="stylesheet" href="/css/vendor.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="/css/app.min.css">
+  </head>
+  <body>
+    <div class="row">
+      <div class="small-12 medium-8 large-6 small-centered columns">
+        <h1>RecepToo</h1>
+        <p>A second bot for reception!</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 medium-8 large-6 small-centered columns">
+        <div class="content">
+          <button class="button expand large" onclick='$.post("/delivery")'>Delivery - Need Signature</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 medium-8 large-6 small-centered columns">
+        <div class="content">
+          <button class="button expand large" onclick='$( "#noappt" ).toggle();'>No Appointment</button>
+          <form name="noappt" action="/noappt" method="post">
+            <div id="noappt" class="hidden">
+              <label class="large">Your Name
+                <input name="guest_name" type="text" required/>
+              </label>
+              <button class="button expand large submit">Ring Bell</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 medium-8 large-6 small-centered columns">
+        <div class="content">
+          <button class="button expand large" onclick='$( "#appt" ).toggle();'>Appointment</button>
+          <form name="appt" action="/appt" method="post">
+            <div id="appt" class="hidden">
+              <label class="large">Your Name
+                <input name="guest_name" type="text" required/>
+              </label>
+              <label for="contact_name" class="large">Contact Name
+                <input id="contact_name" name="contact_name" type="text" required/>
+              </label>
+              <input id="contact_id" type="hidden" name="contact_id" value="" />
+              <button class="button expand large submit">Check In</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
