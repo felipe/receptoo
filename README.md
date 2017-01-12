@@ -6,7 +6,7 @@ This version of my reception app (RecepBot) but built on Node.js/Express instead
 
 ## How it looks
 
-[[https://github.com/felipe/receptoo/blob/master/src/md/screenshot.png|alt=screenshot]]
+![screenshot](/src/md/screenshot.png?raw=true)
 
 ## What It does
 
