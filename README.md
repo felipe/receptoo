@@ -4,6 +4,10 @@ A Slack notification page made to run on an iPad in your office's reception area
 
 This version of my reception app (RecepBot) but built on Node.js/Express instead of Ruby/Sinatra.
 
+## How it looks
+
+[[https://github.com/felipe/receptoo/blob/master/src/md/screenshot.png|alt=screenshot]]
+
 ## What It does
 
 RecepToo shows three buttons to the user to account for three common reasons for office visitors:
